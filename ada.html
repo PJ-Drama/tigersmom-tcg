@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ada HTML</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        position: relative;
+        background: #000;
+        color: #fff;
+        cursor: default;
+      }
+
+      .title {
+        font-weight: bolder;
+      }
+
+      .center {
+        font-family: Arial, Roboto;
+        font-size: 15;
+      }
+
+      .body {
+        font-family: Arial, Roboto;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 50px;
+        text-align: center;
+      }
+
+      .t1 {
+        text-align: center;
+        font-weight: normal;
+      }
+
+      .cards {
+        font-family: Arial, Roboto;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .img {
+        width: 8%;
+        height: auto;
+        margin: 30px 10px 10px 20px;
+      }
+
+      .light {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20%);
+      }
+    </style>
+  </head>
+  <body>
+    <center class="center">
+      <p class="title">TCG DECK RECOMMENDATION</p>
+      <p>from the one and only</p>
+      <p>gf of gojo satoru</p>
+      <p>sincerely yours</p>
+      <p>yours truly</p>
+    </center>
+
+    <div class="body">
+    <div class="first-team">1ST TEAM
+      <p class="t1">RAIDEN the alive twin</p>
+      <p class="t1">the kid w the weird bangs --> XINGQIU</p>
+      <p class="t1">☆⋆｡𖦹°‧★CHONGYUN☆⋆｡𖦹°‧★</p>
+    </div>
+
+    <div class="second-team">2ND TEAM
+      <p class="t1">𐙚★༘⋆YELAN the it girl𐙚★༘⋆</p>
+      <p class="t1">the gay gray haired one (ALHAITHAM??)</p>
+      <p class="t1">twinkiest of all twinks a.k.a LYNEY</p>
+    </div>
+
+    <div class="third-team">3RD TEAM
+      <p class="t1">funniest genshin character general mahamatra</p>
+      <p class="t1">⋆ ˚｡⋆୨ ʚɞ ୧⋆ ˚｡⋆GOATYU⋆ ˚｡⋆୨ ʚɞ ୧⋆ ˚｡⋆</p>
+      <p class="t1">if the snow is thick we can eat it -adeptus XIAO</p>
+    </div>
+  </div>
+
+  <div class="cards">MUST HAVE TCG CARDS</div>
+  <center>
+  <div class="images">
+    <img class="img" src="../pakemo-pictures/card1.webp">
+    <img class="img" src="../pakemo-pictures/card2.webp">
+    <img class="img" src="../pakemo-pictures/card3.webp">
+    <img class="img" src="../pakemo-pictures/card4.webp">
+    <img class="img" src="../pakemo-pictures/card5.webp">
+    <img class="img" src="../pakemo-pictures/card6.webp">
+    <img class="img" src="../pakemo-pictures/card7.webp">
+    <img class="img" src="../pakemo-pictures/card8.webp">
+    <img class="img" src="../pakemo-pictures/card9.webp">
+    <img class="img" src="../pakemo-pictures/card10.webp">
+    <img class="img" src="../pakemo-pictures/card11.webp">
+    <img class="img" src="../pakemo-pictures/card12.webp">
+    <img class="img" src="../pakemo-pictures/card13.webp">
+    <img class="img" src="../pakemo-pictures/card14.webp">
+  </div>
+  </center>
+
+  <div class="light"></div>
+  <script type="text/javascript">
+    var pos = document.documentElement;
+    pos.addEventListener('mousemove', e => {
+      pos.style.setProperty('--x', e.clientX + 'px')
+      pos.style.setProperty('--y', e.clientY + 'px')
+    })
+  </script>
+  </body>
+</html>
